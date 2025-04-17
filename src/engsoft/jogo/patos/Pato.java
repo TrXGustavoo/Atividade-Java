@@ -23,6 +23,8 @@ public abstract class Pato {
 
 	protected Padrao_Dancar comportamento_danca;
 
+	protected Padrao_Pular comportamentoPulo;
+
 	abstract String mostrar();
 
 	public String nadar() {
@@ -44,5 +46,16 @@ public abstract class Pato {
 
 	public String comportamento_dancar() {
 		return comportamento_danca.dancar();
+	}
+
+	public void setComportamentoPulo(Padrao_Pular cp) {
+		comportamentoPulo = cp;
+	}
+
+	public String executarPulo() {
+		if (comportamentoPulo != null) {
+			return comportamentoPulo.pular();
+		}
+		return "Este pato não consegue pular.";
 	}
 }

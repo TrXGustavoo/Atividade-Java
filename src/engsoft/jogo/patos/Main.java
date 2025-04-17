@@ -10,10 +10,11 @@ package engsoft.jogo.patos;
 public class Main {
     public static void main(String[] args) {
         // Testando o pato de borracha
-        Pato pato1 = new Pato_Borracha();
+        Pato pato1 = new Pato_Ruivo();
         System.out.println(pato1.mostrar());
         System.out.println(pato1.comportamento_pato()); // voo
         System.out.println(pato1.comportamento_dancar()); // dança
+        System.out.println("Pato Ruivo " + pato1.executarPulo());
 
         System.out.println("--------");
 

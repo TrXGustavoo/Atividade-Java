@@ -21,6 +21,7 @@ public class Pato_Ruivo extends Pato implements Padrao_Grasnar {
 	public Pato_Ruivo() {
 		setComportamento(new Voaveis_Asa());
 		setComportamentoDanca(new Danca_Samba());
+		setComportamentoPulo(new Pular_Alto());
 	}
 
 	public String mostrar() {
@@ -31,6 +32,13 @@ public class Pato_Ruivo extends Pato implements Padrao_Grasnar {
 		// TODO Auto-generated method stub
 		return "Que-Que.";
 
+	}
+
+	public String executarPulo() {
+		if (comportamentoPulo != null) {
+			return comportamentoPulo.pular();
+		}
+		return "Este pato não consegue pular.";
 	}
 
 }

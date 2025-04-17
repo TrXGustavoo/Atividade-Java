@@ -10,6 +10,7 @@ package engsoft.jogo.patos;
  * 
  * @see Padrao_Voaveis
  */
+
 public class Voaveis_Asa implements Padrao_Voaveis {
 
 	private double velocidade;
