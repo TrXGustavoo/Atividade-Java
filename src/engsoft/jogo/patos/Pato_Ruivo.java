@@ -14,6 +14,7 @@ package engsoft.jogo.patos;
  * @see Padrao_Grasnar
  * @see Voaveis_Asa
  * @see Danca_Samba
+ * @see Luta_Karate
  */
 
 public class Pato_Ruivo extends Pato implements Padrao_Grasnar {
@@ -21,6 +22,7 @@ public class Pato_Ruivo extends Pato implements Padrao_Grasnar {
 	public Pato_Ruivo() {
 		setComportamento(new Voaveis_Asa());
 		setComportamentoDanca(new Danca_Samba());
+		setComportamentoLuta(new Lutar_Karate());
 		setComportamentoPulo(new Pular_Alto());
 	}
 

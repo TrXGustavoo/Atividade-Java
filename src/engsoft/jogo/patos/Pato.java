@@ -15,6 +15,8 @@ package engsoft.jogo.patos;
  * 
  * @see Padrao_Voaveis
  * @see Padrao_Dancar
+ * @see Padrao_Dirigir
+ * @see Padrao_Lutar
  */
 
 public abstract class Pato {
@@ -26,6 +28,8 @@ public abstract class Pato {
 	protected Padrao_Pular comportamentoPulo;
 
 	protected Padrao_Dirigir comportamento_dirige;
+
+	protected Padrao_Lutar comportamento_luta;
 
 	abstract String mostrar();
 
@@ -59,6 +63,12 @@ public abstract class Pato {
 	{		
 		return comportamento_dirige.dirigir();		
 
+	}public void setComportamentoLuta(Padrao_Lutar Luta) {
+		comportamento_luta = Luta;
+	}
+
+	public String comportamento_lutar() {
+		return comportamento_luta.lutar();
 	}
 
 	public void setComportamentoPulo(Padrao_Pular cp) {

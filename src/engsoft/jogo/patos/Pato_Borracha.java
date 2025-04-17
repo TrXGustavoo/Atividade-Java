@@ -11,6 +11,7 @@ package engsoft.jogo.patos;
  * @see Pato
  * @see Nao_Voa
  * @see Nao_Danca
+ * @see Nao_Lutar
  */
 public class Pato_Borracha extends Pato {
 
@@ -18,6 +19,7 @@ public class Pato_Borracha extends Pato {
 		setComportamento(new Nao_Voa());
 		setComportamentoDanca(new Nao_Danca());
 		setComportamento(new Nao_Dirige());
+		setComportamentoLuta(new Nao_Lutar());
 	}
 
 	public String mostrar() {
