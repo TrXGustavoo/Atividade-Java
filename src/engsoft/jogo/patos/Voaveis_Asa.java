@@ -1,9 +1,15 @@
 package engsoft.jogo.patos;
 
-
-// 	Classe concreta é uma classe que possui implementação completa para todos os seus métodos.
-
-
+/**
+ * Implementação concreta de um comportamento de voo natural usando asas.
+ * 
+ * Esta classe faz parte do padrão Strategy para comportamentos de voo,
+ * permitindo representar patos que voam naturalmente usando suas asas.
+ * Quando utilizada, retorna uma mensagem descrevendo o voo natural
+ * e a velocidade padrão alcançada por patos comuns.
+ * 
+ * @see Padrao_Voaveis
+ */
 public class Voaveis_Asa implements Padrao_Voaveis {
 
 	private double velocidade;

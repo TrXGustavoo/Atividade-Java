@@ -1,3 +1,10 @@
+/**
+ * Classe principal que demonstra o uso do padrão Strategy com diferentes tipos de patos.
+ * 
+ * Esta classe contém o método main que cria instâncias de diferentes tipos de patos
+ * e demonstra como seus comportamentos podem ser exibidos e alterados dinamicamente
+ * em tempo de execução.
+ */
 package engsoft.jogo.patos;
 
 public class Main {
@@ -14,7 +21,7 @@ public class Main {
         Pato pato2 = new Pato_Bravo();
         System.out.println(pato2.mostrar());
         System.out.println(pato2.comportamento_pato());
-        System.out.println(((Pato_Bravo)pato2).grasnar()); // grasnado
+        System.out.println(((Pato_Bravo) pato2).grasnar()); // grasnado
         System.out.println(pato2.comportamento_dancar());
 
         System.out.println("--------");
