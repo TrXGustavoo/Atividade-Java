@@ -6,7 +6,8 @@ public class Pato_Borracha extends Pato {
 
 	public Pato_Borracha()
 	{
-		setComportamento(new Nao_Voa());		
+		setComportamento(new Nao_Voa());	
+		setComportamentoDanca(new Nao_Danca());	
 	}
 	
 	public String mostrar() {

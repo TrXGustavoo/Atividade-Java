@@ -1,31 +1,27 @@
 package engsoft.jogo.patos;
 
-
-
-/**
- * Classe principal para demonstrar o comportamento dos patos no jogo.
- * Este exemplo cria um pato, exibe seus comportamentos padrão,
- * e altera seu comportamento em tempo de execução.
- */
-
 public class Main {
+    public static void main(String[] args) {
+        // Testando o pato de borracha
+        Pato pato1 = new Pato_Borracha();
+        System.out.println(pato1.mostrar());
+        System.out.println(pato1.comportamento_pato()); // voo
+        System.out.println(pato1.comportamento_dancar()); // dança
 
-	public static void main(String[] args) {
-		Pato pt = new Pato_Ruivo();		
-		
-		System.out.println(pt.mostrar());
-		System.out.println(pt.nadar());
-		System.out.println(pt.comportamento_pato());
-		
-		pt.setComportamento(new Voar_Foguete());
-		
-		System.out.println(pt.comportamento_pato());
-		
-		pt.setComportamento(new Voar_Raso());
-		
-		System.out.println(pt.comportamento_pato());
-		
-		
-	}
+        System.out.println("--------");
 
+        // Testando o pato bravo
+        Pato pato2 = new Pato_Bravo();
+        System.out.println(pato2.mostrar());
+        System.out.println(pato2.comportamento_pato());
+        System.out.println(((Pato_Bravo)pato2).grasnar()); // grasnado
+        System.out.println(pato2.comportamento_dancar());
+
+        System.out.println("--------");
+
+        // Mudando comportamento de dança em tempo de execução
+        pato2.setComportamentoDanca(new Danca_Samba());
+        System.out.println("Mudando dança do Pato Bravo...");
+        System.out.println(pato2.comportamento_dancar());
+    }
 }

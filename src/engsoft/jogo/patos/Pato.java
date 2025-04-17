@@ -6,6 +6,9 @@ public abstract class Pato {
 	
 	protected Padrao_Voaveis comportamento_pato;
 
+	protected Padrao_Dancar comportamento_danca; 
+
+
 	abstract String mostrar();
 	
 	public String nadar()
@@ -21,5 +24,14 @@ public abstract class Pato {
 	public String comportamento_pato()
 	{		
 		return comportamento_pato.voar();		
+
+	}
+
+	public void setComportamentoDanca(Padrao_Dancar danca) {
+		comportamento_danca = danca;
+	}
+
+	public String comportamento_dancar() {
+		return comportamento_danca.dancar();
 	}
 }

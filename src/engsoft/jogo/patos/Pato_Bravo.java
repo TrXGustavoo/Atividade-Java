@@ -7,7 +7,8 @@ public class Pato_Bravo extends Pato implements  Padrao_Grasnar{
 
 	public Pato_Bravo()	
 	{
-		setComportamento(new Voaveis_Asa());		
+		setComportamento(new Voaveis_Asa());	
+		setComportamentoDanca(new Danca_Tango());	
 	}
 	
 	public String mostrar() {		
