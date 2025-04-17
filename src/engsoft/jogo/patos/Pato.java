@@ -25,6 +25,8 @@ public abstract class Pato {
 
 	protected Padrao_Pular comportamentoPulo;
 
+	protected Padrao_Dirigir comportamento_dirige;
+
 	abstract String mostrar();
 
 	public String nadar() {
@@ -46,6 +48,17 @@ public abstract class Pato {
 
 	public String comportamento_dancar() {
 		return comportamento_danca.dancar();
+	}
+
+	public void setComportamento(Padrao_Dirigir dirigir)
+	{
+		comportamento_dirige = dirigir;		
+	}
+	
+	public String comportamento_dirige()
+	{		
+		return comportamento_dirige.dirigir();		
+
 	}
 
 	public void setComportamentoPulo(Padrao_Pular cp) {

@@ -24,6 +24,7 @@ public class Main {
         System.out.println(pato2.comportamento_pato());
         System.out.println(((Pato_Bravo) pato2).grasnar()); // grasnado
         System.out.println(pato2.comportamento_dancar());
+        System.out.println(pato2.comportamento_dirige()); //dirige
 
         System.out.println("--------");
 
@@ -31,5 +32,14 @@ public class Main {
         pato2.setComportamentoDanca(new Danca_Samba());
         System.out.println("Mudando dança do Pato Bravo...");
         System.out.println(pato2.comportamento_dancar());
+
+        System.out.println("--------");
+
+        // Testando o pato de borracha
+        Pato pato3 = new Pato_Borracha();
+        System.out.println(pato3.mostrar());
+        System.out.println(pato3.comportamento_pato()); // voo
+        System.out.println(pato3.comportamento_dancar()); // dança
+        System.out.println(pato3.comportamento_dirige()); //dirige
     }
 }
